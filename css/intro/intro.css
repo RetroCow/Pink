@@ -1,0 +1,76 @@
+.main-nav {
+  display: none;
+}
+.intro {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 0;
+  background-color: #1d2631;
+  color: #ffffff;
+  width: 320px;
+}
+.intro__text-wrapper {
+  background-color: #1d2631;
+  text-align: center;
+  order: 1;
+  position: relative;
+  z-index: 1;
+}
+.intro__heading {
+  margin: 0;
+  padding: 0;
+  display: none;
+}
+.intro__list {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  width: 205px;
+  margin: 0 auto 19px auto;
+}
+.intro__item {
+  width: 55px;
+  height: 60px;
+}
+.intro__item--apple {
+  background-image: url("../less/intro/img/apple-logo.svg");
+  background-size: 53px 57px;
+  background-position: -2px 1px;
+  background-repeat: no-repeat;
+}
+.intro__item--android {
+  background-image: url("../less/intro/img/android-logo.svg");
+  background-position: 4px 9px;
+  background-size: 50px 49px;
+  background-repeat: no-repeat;
+}
+.intro__item--microsoft {
+  background-image: url("../less/intro/img/microsoft-logo.svg");
+  background-size: 43px 44px;
+  background-position: right 13px;
+  background-repeat: no-repeat;
+}
+.intro__availability {
+  line-height: 24px;
+  width: 240px;
+  margin: 0 auto 30px auto;
+}
+.round-button.intro__position {
+  margin: 28px 0px 32px 0;
+}
+.intro__img-wrapper {
+  margin: 0;
+  padding: 0;
+}
+.intro__img-wrapper {
+  min-height: 462px;
+  background-image: url("../less/intro/img/bg-header.jpg");
+  background-position: center;
+  position: relative;
+}
+.intro__hand {
+  position: absolute;
+  bottom: -30px;
+}

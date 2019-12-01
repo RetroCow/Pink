@@ -1,0 +1,149 @@
+.price {
+	background-color: #f2f2f2;
+	min-height: 500px;
+	position: relative;
+}
+
+.price__table {
+	min-width: 840px;
+	border-collapse: collapse;
+	margin: 0 auto;
+	position: absolute;
+}
+
+.price__header {
+	background-color: #283645;
+	color: #ffffff;
+	text-align: center;
+}
+
+.price__header td {
+	margin: 0;
+	padding: 0;
+	width: 278px;
+	padding-top: 17px;
+	padding-bottom: 20px;
+	border-left: 2px solid #e5e5e5;
+	box-sizing: border-box;
+}
+
+.price__hit {
+	position: relative;
+	&:before {
+		content: "";
+		position: absolute;
+		left: -26px;
+		top: 12px;
+		border-bottom: 28px solid #d22856;
+		border-left: 28px solid transparent;
+		border-right: 28px solid transparent;
+		width: 46px;
+		transform: rotate(-45deg);
+	}
+	&:after {
+		content: "ХИТ";
+		position: absolute;
+		font-family: "Open Sans Bold", sans-serif;
+		left: 9px;
+		top: 12px;
+		transform: rotate(-45deg);
+	}
+}
+
+.price__header td:first-child {
+	border-left: none;
+}
+
+.price__name {
+	margin: 0 auto;
+	padding: 0;
+	font-family: "Open Sans Bold", sans-serif;
+	text-transform: uppercase;
+	font-size: 18px;
+	margin-bottom: 1px;
+	display: block;
+}
+
+.price__value {
+	font-family: "Open Sans Light", sans-serif;
+	margin: 0;
+	padding: 0;
+	font-size: 24px;
+}
+
+.price__body {
+	text-transform: uppercase;
+}
+
+.price__body td {
+	border: 2px solid #e5e5e5;
+	border-top: none;
+	padding: 15px 0px 14px 22px;
+}
+
+.price__body td:first-child {
+	display: none;
+}
+
+.price__icon {
+	position: relative;
+	float: right;
+}
+
+.price__icon--check.price__icon {
+	top: 15px;
+	right: 45px;
+
+	&:before {
+		content: "";
+		position: absolute;
+		width: 16px;
+		height: 3px;
+		background-color: #3dc644;
+		left: -7px;
+		top: 5px;
+		transform: rotate(45deg);
+	}
+
+	&:after {
+		content: "";
+		position: absolute;
+		width: 28px;
+		height: 3px;
+		background-color: #3dc644;
+		left: 1px;
+		top: 1px;
+		transform: rotate(-45deg);
+	}
+}
+
+.price__icon--cross.price__icon {
+	top: 12px;
+	right: 52px;
+
+	&:before {
+		content: "";
+		position: absolute;
+		width: 35px;
+		height: 3px;
+		background-color: #f25b26;
+		left: 0px;
+		top: 0px;
+		transform: rotate(45deg);
+	}
+
+	&:after {
+		content: "";
+		position: absolute;
+		width: 35px;
+		height: 3px;
+		background-color: #f25b26;
+		left: 0px;
+		top: 0px;
+		transform: rotate(-45deg);
+	}
+}
+
+@media (min-width: @tablet-width) {
+	
+}

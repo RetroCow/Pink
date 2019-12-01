@@ -1,0 +1,21 @@
+.round-button {
+  display: inline-block;
+  text-decoration: none;
+  line-height: 18px;
+  font-size: 18px;
+  font-family: "Open Sans Bold", sans-serif;
+  color: #ffffff;
+  border: 3px solid #ffffff;
+  border-radius: 30px;
+  padding: 15.5px 37px;
+}
+.round-button:hover {
+  background-color: #ffffff;
+  color: #d22856;
+}
+.round-button:active {
+  color: rgba(210, 40, 86, 0.3);
+}
+.round-button--intro {
+  padding: 15.5px 45px;
+}
