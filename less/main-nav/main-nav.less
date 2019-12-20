@@ -8,6 +8,37 @@
 	min-height: 69px;
 }
 
+.main-nav__logo-link {
+	position: absolute;
+	z-index: 1;
+	top: 21px;
+	left: 17px;
+	outline: none;
+
+	&:focus svg {
+		fill: rgba(210, 40, 86, 1);
+	}
+
+	&:hover svg {
+		fill: rgba(210, 40, 86, 1);
+	}
+
+	&:active svg {
+		fill: rgba(255, 255, 255, 0.3);
+	}
+}
+
+.main-nav__logo-mobile {
+	width: 83px;
+	height: 23px;
+	fill: #ffffff;
+}
+
+.main-nav__logo-tablet,
+.main-nav__logo-desktop {
+	display: none;
+}
+
 .main-nav--closed .main-nav__logo-pad {
 	position: relative;
 	border: none;
@@ -36,6 +67,10 @@
 	background-color: transparent;
 	outline: none;
 	z-index: 1;
+}
+
+.main-nav--nojs .main-nav__logo-pad {
+	background-color: #283645;
 }
 
 .main-nav--nojs .main-nav__toggle {
@@ -111,6 +146,46 @@
 		min-height: 110px;
 	}
 
+	.main-nav__logo-link {
+		top: 28px;
+		left: 76px;
+
+		&:hover .main-nav__symbol {
+			fill: rgba(210, 40, 86, 1);
+		}
+
+		&:focus .main-nav__symbol{
+			fill: rgba(210, 40, 86, 1);
+		}
+
+		&:active .main-nav__symbol{
+			fill: rgba(255, 255, 255, 0.3);
+		}
+
+		&:hover .main-nav__glasses {
+			fill: rgba(210, 40, 86, 1);
+		}
+
+		&:focus .main-nav__glasses {
+			fill: rgba(210, 40, 86, 1);
+		}
+
+		&:active .main-nav__glasses {
+			fill: rgba(255, 255, 255, 0.3);
+		}
+	}
+
+	.main-nav__logo-tablet {
+		display: block;
+		fill: #ffffff;
+		width: 145px;
+		height: 40px;
+	}
+
+	.main-nav__logo-mobile {
+		display: none;
+	}
+
 	.main-nav--closed .main-nav__logo-pad {
 		margin-bottom: -110px;
 	}
@@ -138,12 +213,62 @@
 		position: relative;
 	}
 
-	.main-nav__logo-pad {
-		border: none;
+	.main-nav--nojs .main-nav__logo-pad,
+	.main-nav--opened .main-nav__logo-pad,
+	.main-nav--closed .main-nav__logo-pad {
+		background-color: transparent;
 	}
 
-	.main-nav--opened .main-nav__logo-pad {
+	.main-nav__logo-pad {
+		border: none;
 		background-color: transparent;
+	}
+
+	.main-nav__logo-wrapper {
+		width: 1200px;
+	}
+
+	.main-nav__logo-link {
+		top: 28px;
+		left: 128px;
+
+		&:hover .main-nav__symbol {
+			fill: rgba(210, 40, 86, 1);
+		}
+
+		&:focus .main-nav__symbol{
+			fill: rgba(210, 40, 86, 1);
+		}
+
+		&:active .main-nav__symbol{
+			fill: rgba(255, 255, 255, 0.3);
+		}
+
+		&:hover .main-nav__spark {
+			fill: rgba(210, 40, 86, 1);
+		}
+
+		&:focus .main-nav__spark {
+			fill: rgba(210, 40, 86, 1);
+		}
+
+		&:active .main-nav__spark {
+			fill: rgba(255, 255, 255, 0.3);
+		}
+	}
+
+	.main-nav__logo-desktop {
+		display: block;
+		width: 150px;
+		height: 40px;
+	}
+
+	.main-nav__logo-tablet {
+		display: none;
+	}
+
+	.main-nav__logo-mobile {
+		display: none;
 	}
 
 	.main-nav__toggle {

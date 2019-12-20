@@ -1,0 +1,156 @@
+.social {
+	display: none;
+	min-height: 130px;
+}
+
+.social__wrapper {
+	margin: 0 auto;
+	width: 620px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.social__logo a {
+	outline: none;
+
+	&:focus path {
+		fill: rgba(210, 40, 86, 1);
+	}
+
+	&:hover path {
+		fill: rgba(210, 40, 86, 1);
+	}
+
+	&:active path {
+		fill: rgba(0, 0, 0, 0.3);
+	}
+}
+
+.social__logo svg {
+	display: none;
+}
+
+.social__logo {
+	padding-top: 35px;
+	padding-left: 1px;
+}
+
+.social__list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: flex;
+	width: 177px;
+	justify-content: space-between;
+	padding-top: 38px;
+	margin-right: 18px;
+}
+
+.social__link {
+	display: block;
+	width: 44px;
+	height: 44px;
+	border: 3px solid #e9ebec;
+	border-radius: 44px;
+	outline: none;
+
+	&:hover {
+		border: 3px solid #000000;
+	}
+
+	&:focus {
+		border: 3px solid #000000;
+	}
+
+	&:active {
+		opacity: 0.2;
+		border: 3px solid #000000;
+	}
+}
+
+.social__link--twitter {
+	background-image: url('../less/social/img/twitter.svg');
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: 20px auto;
+}
+
+.social__link--facebook {
+	background-image: url('../less/social/img/facebook.svg');
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: 9px auto;
+}
+
+.social__link--youtube {
+	background-image: url('../less/social/img/youtube.svg');
+	background-repeat: no-repeat;
+	background-position: 53% 50%;
+	background-size: 16px auto;
+}
+
+.social__academy-logo {
+	position: relative;
+	padding-top: 50px;
+	padding-right: 42px;
+
+	&:before {
+		content: '';
+		position: absolute;
+		width: 30px;
+		height: 40px;
+		right: -2px;
+		background-image: url('../less/social/img/htmlacademy.svg');
+		background-repeat: no-repeat;
+		background-size: 27px auto;
+	}
+}
+
+@media (min-width: @tablet-width) {
+	.social {
+		display: block;
+	}
+
+	.social__logo .social__logo-tablet {
+		display: block;
+	}
+}
+
+@media (min-width: @desktop-width) {
+	.social {
+		min-height: 197px;
+	}
+
+	.social__wrapper {
+		width: 940px;
+	}
+
+	.social__logo .social__logo-tablet {
+		display: none;
+	}
+
+	.social__logo .social__logo-desktop {
+		display: block;
+		width: 146px;
+	}
+
+	.social__logo {
+		padding-top: 66px;
+		padding-left: 0px;
+	}
+
+	.social__list {
+		padding-top: 77px;
+		margin-right: -8px;
+	}
+
+	.social__academy-logo {
+		font-size: 18px;
+		padding-top: 87px;
+		padding-right: 41px;
+
+		&:before {
+			right: -3px;
+		}
+	}
+}

@@ -1,14 +1,20 @@
 .price {
 	background-color: #f2f2f2;
-	min-height: 500px;
-	position: relative;
+}
+
+.price__wrapper {
+	width: 100%;
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
 }
 
 .price__table {
-	min-width: 840px;
+	width: 840px;
+	box-sizing: border-box;
 	border-collapse: collapse;
-	margin: 0 auto;
-	position: absolute;
+	margin-bottom: 41px;
 }
 
 .price__header {
@@ -77,11 +83,13 @@
 
 .price__body td {
 	border: 2px solid #e5e5e5;
+	background-color: #ffffff;
 	border-top: none;
 	padding: 15px 0px 14px 22px;
 }
 
-.price__body td:first-child {
+.price__body td:first-child,
+.price__header td:first-child {
 	display: none;
 }
 
@@ -144,6 +152,160 @@
 	}
 }
 
+	.price__toggles {
+		margin-bottom: 47px;
+	}
+
+	.price__first-slide {
+		transform: translateX(280px);
+	}
+
+	.price__second-slide {
+		transform: translateX(0px);
+	}
+
+	.price__third-slide {
+		transform: translateX(-280px);
+	}
+
 @media (min-width: @tablet-width) {
-	
+	.price__table {
+		width: 620px;
+		margin-bottom: 65px;
+	}
+
+	.price__header {
+		background-color: #f2f2f2;
+	}
+
+	.price__header td:first-child {
+		width: 0px;
+	}
+
+	.price__header td {
+		width: 155px;
+		background-color: #283645; 
+		padding-top: 14px;
+		padding-bottom: 10px;
+	}
+
+	.price__name {
+		margin-bottom: -4px;
+	}
+
+	.price__hit {
+
+		&:before {
+			top: 3px;
+			border-bottom: 26px solid #d22856;
+		}
+
+		&:after {
+			font-family: "Open Sans Light", sans-serif;
+			left: 7px;
+			top: 5px;
+		}
+	}
+
+	.price__body td:first-child,
+	.price__header td:first-child {
+		display: block;
+	}
+
+	.price__body td {
+		text-transform: none;
+		border-right: none;
+		padding: 5px 0 10px 15px;
+	}
+
+	.price__body tr:first-child td:first-child {
+		border-top: 2px solid #e5e5e5;
+	}
+
+	.price__name {
+		font-size: 16px;
+	}
+
+	.price__value {
+		font-size: 19px;
+	}
+
+	.price__hidden {
+		display: none;
+	}
+
+	.price__icon--check.price__icon {
+		top: -4px;
+		left: -86px;
+	}
+
+	.price__icon--cross.price__icon {
+		top: -5px;
+		left: -94px;
+	}
+
+	.price__toggles {
+		display: none;
+	}
+
+	.price__first-slide {
+		transform: translateX(0px);
+	}
+
+	.price__second-slide {
+		transform: translateX(0px);
+	}
+
+	.price__third-slide {
+		transform: translateX(0px);
+	}
+
+}
+
+@media (min-width: @desktop-width) {
+	.price__table {
+		width: 940px;
+		margin-bottom: 93px;
+	}
+
+	.price__header td {
+		padding-bottom: 20px;
+		width: 235px;
+	}
+
+	.price__name {
+		font-size: 18px;
+		margin-bottom: 0px;
+	}
+
+	.price__value {
+		font-size: 24px;
+	}
+
+	.price__hit {
+
+		&:before {
+			top: 13px;
+		}
+
+		&:after {
+			left: 11px;
+			top: 9px;
+		}
+	}
+
+	.price__body td {
+		font-size: 18px;
+		padding: 13px 0px 16px 20px;
+	}
+
+	.price__icon--check.price__icon {
+		top: 1px;
+		left: -127px;
+	}
+
+	.price__icon--cross.price__icon {
+		top: -2px;
+		left: -134px;
+	}
 }
