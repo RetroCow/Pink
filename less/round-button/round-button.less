@@ -25,6 +25,50 @@
 	}
 }
 
+.round-button--red {
+	color: #d22856;
+	border: 3px solid #d22856;
+	background-color: transparent;
+
+	&:hover {
+		background-color: #d22856;
+		color: #ffffff;
+	}
+
+	&:focus {
+		background-color: #d22856;
+		color: #ffffff;
+	}
+
+	&:active {
+		color: rgba(255, 255, 255, 0.3);
+	}
+}
+
+.round-button--gray {
+	opacity: 0.1;
+	color: #283645;
+	border: 3px solid #283645;
+
+	&:hover {
+		opacity: 0.3;
+		color: #283645;
+		border: 3px solid #283645;
+	}
+
+	&:focus {
+		opacity: 0.3;
+		color: #283645;
+		border: 3px solid #283645;
+	}
+
+	&:active {
+		opacity: 0.3;
+		color: #ffffff;
+		background-color: #283645;
+	}
+}
+
 @media (min-width: @tablet-width){
 	.round-button--intro {
 		padding: 15.5px 44px;

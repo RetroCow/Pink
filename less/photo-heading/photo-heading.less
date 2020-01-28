@@ -1,0 +1,41 @@
+.photo-heading {
+	background-image: url('../less/photo-heading/img/bg-header.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	min-height: 140px;
+	margin: 0 auto;
+	padding-top: 100px;
+}
+
+.photo-heading__text {
+	margin: 0 auto;
+	padding: 0;
+	text-align: center;
+	width: 170px;
+	color: #ffffff;
+	font-family: "Open Sans Light", sans-serif;
+	font-weight: lighter;
+	font-size: 24px;
+	line-height: 28px;
+}
+
+@media (min-width: @tablet-width) {
+	.photo-heading {
+		min-height: 260px;
+		padding-top: 179px;
+	}
+
+	.photo-heading__text {
+		width: 420px;
+		font-size: 50px;
+		line-height: 60px;
+	}
+}
+
+@media (min-width: @desktop-width) {
+	.photo-heading {
+		min-height: 220px;
+		padding-top: 175px;
+	}
+}
